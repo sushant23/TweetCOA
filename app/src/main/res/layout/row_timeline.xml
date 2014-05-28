@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivTimelineImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/tvTimelineName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivTimelineImage"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvTimeLineText"
+        android:layout_below="@id/tvTimelineName"
+        android:layout_toRightOf="@id/ivTimelineImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweeted on:"
+        android:id="@+id/tvTweetedDateLabel"
+        android:layout_toRightOf="@id/ivTimelineImage"
+        android:layout_below="@id/tvTimeLineText"
+
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="postedOn"
+        android:id="@+id/tvTweetedDate"
+        android:layout_below="@id/tvTimeLineText"
+        android:layout_toRightOf="@id/tvTweetedDateLabel"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:layout_below="@id/tvTweetedDateLabel"
+        android:id="@+id/gvImages"
+        ></GridView>
+
+</RelativeLayout>

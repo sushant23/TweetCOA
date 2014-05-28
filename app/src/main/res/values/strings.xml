@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TweetCOA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="twittermainthemecolor">#66CCFF</color>
+    <color name="white">#FFFFFF</color>
+</resources>
